@@ -1,0 +1,22 @@
+{
+  "name": "chat-api",
+  "version": "1.0.0",
+  "description": "criação de um site usando api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelMengue2/chat-api.git"
+  },
+  "author": "Rafael dos Santos Mengue",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelMengue2/chat-api/issues"
+  },
+  "homepage": "https://github.com/RafaelMengue2/chat-api#readme",
+  "dependencies": {
+    "mongodb": "^5.5.0"
+  }
+}
