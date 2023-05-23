@@ -16,6 +16,9 @@ async function connect(){
 async function find(collection){
     const db = await connect();
     return db.collection(collection).find().toArray();
+    let salas = await db.collection(collection).find().toArray();
+    console.log(salas)
+    return salas;
 
 }
 
@@ -23,4 +26,4 @@ async function insertOne(collection, objeto) {
     const db = await connect();
     return db.collection(collection).insertOne(objeto);
 }
-module.exports = {find}
+module.exports = {findAll}
