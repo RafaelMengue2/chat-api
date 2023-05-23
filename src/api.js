@@ -14,6 +14,12 @@ app.use('/',router.get('/sobre', (req, res)=>{
         "versão":"0.1.0",
         "autor":"Rafael Mengue"
     })
-}));
+}))
+
+app.use('/salas',router.get('/salas', (req, res, next)=>{
+    const salaController = require("./controller/salaController");
+    let resp = salaController.get();
+    res.status(200).send(resp)
+    }))
 
 module.exports=app;
