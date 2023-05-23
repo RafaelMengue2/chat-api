@@ -28,4 +28,4 @@ function listarSalas(){
     return db.find("salas");
 }
 
-module.exports = {listarSalas}
+module.exports = { listarSalas }
